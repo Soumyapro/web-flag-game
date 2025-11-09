@@ -3,7 +3,10 @@ import { getFlagImage, getFlagInformation } from './routes/api.js';
 import cors from 'cors';
 
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: [
+        'http://localhost:5173',
+        'https://Soumyapro.github.io',
+    ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
