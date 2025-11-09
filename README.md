@@ -107,15 +107,6 @@ npm start            # Render runs this in production
 Ensure `origin` in `server.js` includes both `http://localhost:5173` and your Netlify domain.
 
 ---
-
-## 📁 Project Structure
-web_game/
-├── backend/
-│   ├── controllers/flagController.js
-│   ├── routes/api.js
-│   ├── server.js
-│   └── data/flag_data.json
-└── frontend/
     ├── src/
     │   ├── pages/Game.jsx
     │   ├── pages/Home.jsx
