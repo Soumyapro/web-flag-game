@@ -22,7 +22,10 @@ function Game() {
     const [errorMessage, setErrorMessage] = useState(null);
     const [hasBootstrapped, setHasBootstrapped] = useState(false);
 
-    const apiBaseUrl = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:3000';
+    const inferredDefaultBaseUrl = window.location.hostname === 'localhost'
+        ? 'http://localhost:3000'
+        : 'https://web-flag-game-backend.onrender.com';
+    const apiBaseUrl = import.meta.env.VITE_API_BASE_URL ?? inferredDefaultBaseUrl;
 
     const progressPercent = useMemo(() => {
         if (!targetQuestions || targetQuestions === 0) {
