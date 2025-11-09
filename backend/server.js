@@ -5,7 +5,7 @@ import cors from 'cors';
 const corsOptions = {
     origin: [
         'http://localhost:5173',
-        'https://Soumyapro.github.io',
+        'https://sage-horse-40ff19.netlify.app'
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
