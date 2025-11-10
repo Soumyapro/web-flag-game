@@ -2,7 +2,6 @@
 
 A fast-paced geography trivia game that challenges players to identify world flags, track streaks, and climb the leaderboard. The app pairs a polished Tailwind UI with a custom Express API that keeps the flag options fresh and prevents quick repeats, making every run feel like a world tour.
 
-Live demo → [https://flagquizmaster.netlify.app/](https://flagquizmaster.netlify.app/)  <!-- cite deployed site -->
 
 ---
 
@@ -95,7 +94,6 @@ npm run build        # outputs to dist/
 - Drag `dist/` into Netlify’s manual deploy UI **or**
 - `netlify deploy --prod --dir=dist`
 
-Live site: [https://flagquizmaster.netlify.app/](https://flagquizmaster.netlify.app/)
 
 ### Backend (Render)
 
